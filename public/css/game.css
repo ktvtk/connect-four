@@ -1,0 +1,101 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.columns-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: fit-content;
+    height: fit-content;
+}
+
+.columns{
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+}
+
+.column-selector{
+    width: 60px;
+    display: flex;
+    height: 600px;
+}
+
+.preview-container {
+    position: fixed;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.preview-cell{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: 4px;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: left 0.1s ease, opacity 0.2s ease;
+    z-index: 10;
+    &.player1{
+        background: #e85d94;
+    }
+    &.player2{
+        background: #00baa7;
+    }
+}
+
+.game-over {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.game-over-status {
+    position: absolute;
+    font: 32px "Open Sans", monospace;
+    color: white;
+    text-align: center;
+    background: #004e48;
+    padding: 10px 12px;
+    border-radius: 12px;
+    white-space: normal;
+    word-wrap: break-word;
+    width: 24%;
+    top: 24px;
+}
+
+.new-game {
+    position: absolute;
+    background: #e85d94;
+    color: white;
+    bottom: 56px;
+    top: 572px;
+    right: 20px;
+    font: 24px "Open Sans", monospace;
+    border-radius:50px;
+    border: none;
+    outline: none;
+    padding: 12px 24px;
+    justify-self: flex-end;
+    transition: all 0.3s ease;
+    white-space: normal;
+    word-wrap: break-word;
+    width: fit-content;
+    height: fit-content;
+    &:hover{
+        box-shadow: 0 0 30px 10px rgba(255, 67, 144, 0.6);
+        background: #e46b9a;
+        cursor: pointer;
+    }
+}

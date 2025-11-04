@@ -1,0 +1,30 @@
+.gameboard {
+    display: grid;
+    grid-template-columns: repeat(7, 60px);
+    grid-template-rows: repeat(6, 60px);
+    width: fit-content;
+    height: fit-content;
+    margin: 72px auto 0;
+    background: #004e48;
+    color: white;
+    border-radius: 30px;
+    gap: 12px;
+    padding: 40px;
+}
+
+.cell{
+    display: flex;
+    background: #003734;
+    border: #00322f solid 3px;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+}
+
+.cell.player1{
+    background: #e85d94;
+}
+.cell.player2{
+    background: #00baa7;
+}

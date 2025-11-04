@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 16px;
+}
+
+.out{
+    margin-right: auto;
+    order: 1;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    &:hover {
+        opacity: 0.8;
+    }
+}

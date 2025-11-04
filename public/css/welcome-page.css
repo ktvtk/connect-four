@@ -1,0 +1,43 @@
+.welcome-page{
+    background: #ffffff;
+    display: flex;
+    position: fixed;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    font: 56px "Open Sans", monospace;
+    color: white;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background: #006c62;
+    width: 800px;
+    height: 500px;
+    border-radius: 30px;
+    box-shadow: 0 0 40px #00baa7;
+}
+
+.head{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.start-button{
+    background: #e85d94;
+    color: white;
+    font: 48px "Open Sans", monospace;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    padding: 20px 40px;
+    margin-top: 50px;
+    &:hover{
+        box-shadow: 0 0 30px 10px rgba(255, 67, 144, 0.6);
+        background: #e46b9a;
+        cursor: pointer;
+    }
+}
